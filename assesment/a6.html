@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     var index =0;
+     var array =[];
+
+     function add_Items_In_Array(){
+         var inputBox = document.getElementById("textBox").value;
+         array[index] = inputBox;
+         index ++;
+          document.getElementById("textBox").value = "";
+          
+     }
+
+     function display_Items_In_Array(){
+         var lineBreak = "<hr/>";
+         for(var i=0; i < array.length; i++){
+            lineBreak += "value " +  i + "  =  " + array[i] + "<br/>";
+           
+         }
+         document.getElementById("Result").innerHTML = lineBreak;
+     }
+
+    </script>
+</head>
+<body>
+    
+<input type="text" id="textBox">
+<input type="button" value="Add" onclick="add_Items_In_Array()">
+<input type="button" value="Display" onclick="display_Items_In_Array()">
+<span id="Result"></span>
+
+
+</body>
+</html>
+         
+            
+           
+        
+
+        
+        
+ 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript program to remove duplicate items from an array</title>
+
+</head>
+<body>
+
+    <script>
+        var array = [1, 2, 3, 2, 3];
+ 
+        function getUnique(arr){
+           
+           var uniqueArr = [];
+           
+       
+           for(var i of arr) {
+               if(uniqueArr.indexOf(i) === -1) {
+                   uniqueArr.push(i);
+               }
+           }
+           console.log(uniqueArr);
+       }
+       
+       getUnique(array);
+       
+           </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript function to check whether an `input` is an array or not.
+    </title>
+</head>
+<body>
+    <script>
+      
+ function validate(input){
+
+    if(toString.call(input)=="[object Array]")
+    return true;
+    return false;
+ };
+
+console.log(validate('w3resource'));
+console.log(validate([1, 2, 4, 0]));
+
+// SHORT CUT//
+//  console.log(Array.isArray('w3resource'));
+//   console.log(Array.isArray([1, 2, 4, 0]));
+
+
+    </script>
+</body>
+</html>

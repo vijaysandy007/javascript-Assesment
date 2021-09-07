@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript function to generate an array of specified length, filled with integer numbers, increase by one from starting position.
+    </title>
+</head>
+<body>
+    <script>
+     function array_length(len, start){
+    var arr = [len];
+    for (var i = 0; i < start; i++, len++){
+        arr[i] = len;
+
+    }
+    return arr;
+}
+console.log(array_length(1, 4));
+console.log(array_length(-6, 4));
+
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+      

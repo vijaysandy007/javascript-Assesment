@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript function to remove a specific element from an array</title>
+</head>
+<body>
+   <script>
+
+function removespecific(array, specific)
+ {
+   var index = array.indexOf(specific);
+   if (index > -1) {
+    array.splice(index, 1);
+}
+   return array;
+ }
+
+console.log(removespecific([2, 5, 9, 6], 5));
+
+   </script> 
+</body>
+</html>

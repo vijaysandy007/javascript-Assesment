@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript function to clone an array (not a reference)
+    </title>
+</head>
+<body>
+    <script>
+
+// var clone = function(arra1) { create local fucntion
+//  return arra1.slice(0);
+//     };
+// console.log(clone([1, 2, 4, 0]));
+// console.log(clone([1, 2, [4, 0]]));
+
+   function clone (arra1){             // direct function.
+       return arra1.slice(0);
+   }
+   console.log(clone([1, 2, 4, 0]));
+   console.log(clone([1, 2, [4, 0]]));
+
+    </script>
+</body>
+</html>
